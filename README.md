@@ -8,16 +8,13 @@ Quick Start (30 seconds)
 ```bash
 # 1. Clone the repository
 git clone https://github.com/taieftech/One_attack.git
-
+```
+```bash
 # 3. Run it
 sudo python3 One_attack/oneattack.py
 
-
-🎯 How It Works
-
-1. Choose Your Attack
-
 ```
+😎 HOW IT WORKS
 ULTIMATE SIMPLE COMMANDER
 ============================================================
 YOUR TOOLS:
