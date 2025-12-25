@@ -7,34 +7,11 @@ Quick Start (30 seconds)
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yourusername/ultimate-pentest-commander.git
-cd ultimate-pentest-commander
-
-# 2. Install dependencies
-chmod +x simple_attack.py
+git clone https://github.com/taieftech/One_attack.git
 
 # 3. Run it
-sudo python3 simple_attack.py
-```
+sudo python3 One_attack/oneattack.py
 
-Required Tools
-
-The commander works with these tools (install what you need):
-
-```bash
-# Basic toolkit
-sudo apt install gobuster dirb hydra medusa nmap sqlmap
-
-# Wireless tools
-git clone https://github.com/drygdryg/OneShot.git
-sudo apt install aircrack-ng reaver
-
-# Social engineering
-sudo apt install set
-
-# MITM tools
-sudo apt install bettercap mitmproxy
-```
 
 🎯 How It Works
 
