@@ -1,5 +1,4 @@
-🗡️ Ultimate Pentest Commander
-Are you tired of writing commands in the terminal? Solution is here!!
+Are you tired of writing commands in the terminal 💔? Solution is here!!
 This script will make your pentesting accuracy at another level.
 Now, it's just selecting your target. ⚠️ Finished ⚠️.
 
@@ -19,7 +18,7 @@ sudo python3 One_attack/oneattack.py
 😎 HOW IT WORKS
 ULTIMATE SIMPLE COMMANDER
 ============================================================
-YOUR TOOLS:
+YOUR TOOLS (Just select and see the magic):
  1. 📁 Gobuster (Directory scan)
  2. 📁 Dirb (Directory scan)
  3. 🔓 OneShot (WPS attack)
@@ -71,10 +70,12 @@ By using this tool, you agree to use it only on systems you own or have explicit
 ```bash
 # Install missing tools
 sudo apt install [tool-name]
+```
+```
 
 # For OneShot:
 git clone https://github.com/drygdryg/OneShot.git
-# Make sure oneshot.py is in the commander directory
+# Make sure oneshot.py is in the commander directory. No monitor mode needed!
 ```
 
 "Permission denied"
