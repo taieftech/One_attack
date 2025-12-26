@@ -106,7 +106,7 @@ class SimpleAttacker:
         print("\n🔐 HYDRA LOGIN ATTACK")
         
         target = input("Target (github.com): ").strip() or "github.com"
-        username = input("Username (admin): ").strip() or "admin"
+        username = input("Username (admin): ").strip() or "/usr/share/seclists/Usernames/top-usernames-shortlist.txt"
         password_file = input("Password file [/usr/share/wordlists/rockyou.txt]: ").strip()
         
         if not password_file:
@@ -121,7 +121,7 @@ class SimpleAttacker:
         print("\n⚡ MEDUSA ATTACK")
         
         target = input("Target IP/URL: ").strip()
-        username = input("Username (admin): ").strip() or "admin"
+        username = input("Username (admin): ").strip() or "/usr/share/seclists/Usernames/top-usernames-shortlist.txt"
         password_file = input("Password file: ").strip() or "/usr/share/wordlists/rockyou.txt"
         
         
