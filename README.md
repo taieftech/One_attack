@@ -1,5 +1,7 @@
-🗡️ Ultimate Pentest Commander
-
+```🗡️ Ultimate Pentest Commander```
+Are you tired of writing commands in the terminal? Solution is here!!
+This script will make your pentesting accuracy at another level.
+Now, it's just just selecting your target. Finished ⚠️.
 
 📦 Installation
 
@@ -30,50 +32,10 @@ YOUR TOOLS:
 10. 💉 SQLMap (SQL injection)
 11. ⚡ Quick All-in-One Scan
 12. 🚪 Exit
-```
 
-2. Fill in the Blanks
 
-```
-📁 GOBUSTER DIRECTORY SCAN
-Target URL (https://example.com): https://target.com
-Wordlist [/usr/share/wordlists/dirb/common.txt]: [ENTER]
-```
 
-3. Watch Live Progress
-
-```
-🚀 Running: sudo gobuster dir -u https://target.com -w /usr/share/wordlists/dirb/common.txt --exclude-length 18979
-------------------------------------------------------------
-===============================================================
-Gobuster v3.6
-===============================================================
-[+] Url:                     https://target.com
-[+] Method:                  GET
-[+] Threads:                 10
-[+] Wordlist:                common.txt
-[+] Negative Status codes:   404
-===============================================================
-/admin                (Status: 403) [Size: 199]
-/images               (Status: 301) [Size: 243]
-✅ Done! Output saved to: results/20241224_143022/gobuster.txt
-```
-
-📊 Results Organization
-
-All results are automatically organized:
-
-```
-results/
-└── 20241224_143022/                    # Timestamped session
-    ├── gobuster_target_com.txt         # Gobuster results
-    ├── oneshot_wlan0.txt              # OneShot output
-    ├── hydra_github_com.txt           # Hydra results
-    ├── nmap_192.168.1.1.txt           # Nmap scan
-    └── quick_scan_summary.txt         # Quick scan results
-```
-
-⚡ Quick All-in-One Mode
+⚡ New Quick All-in-One Mode
 
 The Quick All-in-One Scan (Option 11) automates everything:
 
