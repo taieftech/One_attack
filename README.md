@@ -1,7 +1,7 @@
 ```🗡️ Ultimate Pentest Commander```
 Are you tired of writing commands in the terminal? Solution is here!!
 This script will make your pentesting accuracy at another level.
-\nNow, it's just just selecting your target. Finished ⚠️.
+Now, it's just selecting your target. ⚠️ Finished ⚠️.
 
 📦 Installation
 
