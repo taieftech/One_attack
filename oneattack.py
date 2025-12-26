@@ -169,7 +169,7 @@ class SimpleAttacker:
     def run_nmap(self):
         """SIMPLE Nmap scan"""
         print("\n🔍 NMAP SCAN")
-        target = input("Target (192.168.1.1) example.com : ").strip() or "192.168.1.1"
+        target = input("Target (192.168.1.1) or example.com : ").strip() or "192.168.1.1"
         
         
         cmd = f"nmap -sV -sC {target}"
