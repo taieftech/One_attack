@@ -1,4 +1,4 @@
-```🗡️ Ultimate Pentest Commander```
+🗡️ Ultimate Pentest Commander
 Are you tired of writing commands in the terminal? Solution is here!!
 This script will make your pentesting accuracy at another level.
 Now, it's just selecting your target. ⚠️ Finished ⚠️.
@@ -46,24 +46,6 @@ The Quick All-in-One Scan (Option 11) automates everything:
 
 Perfect for initial reconnaissance!
 
-🔧 Customization
-
-Add Your Own Commands
-
-Edit the script to add your favorite tools:
-
-```python
-def run_your_tool(self):
-    """Your custom tool"""
-    target = input("Target: ").strip()
-    # YOUR command here
-    cmd = f"your_tool --target {target} --option value"
-    self.run_command_live(cmd, "your_tool")
-```
-
-Modify Wordlists
-
-Default wordlist paths are easily changeable in the __init__ method.
 
 ⚠️ Legal & Ethical Use
 
@@ -92,7 +74,6 @@ sudo apt install [tool-name]
 
 # For OneShot:
 git clone https://github.com/drygdryg/OneShot.git
-cd OneShot
 # Make sure oneshot.py is in the commander directory
 ```
 
@@ -100,7 +81,7 @@ cd OneShot
 
 ```bash
 # Some tools need sudo
-sudo python3 simple_attack.py
+sudo python3 /One_attack/oneattack.py
 ```
 
 No live output
