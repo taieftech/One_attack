@@ -1,5 +1,3 @@
-
-
 import os
 import sys
 import subprocess
@@ -171,7 +169,7 @@ class SimpleAttacker:
     def run_nmap(self):
         """SIMPLE Nmap scan"""
         print("\n🔍 NMAP SCAN")
-        target = input("Target (192.168.1.1): ").strip() or "192.168.1.1"
+        target = input("Target (192.168.1.1) example.com : ").strip() or "192.168.1.1"
         
         
         cmd = f"nmap -sV -sC {target}"
@@ -193,7 +191,7 @@ class SimpleAttacker:
     def run_quick_scan(self):
        
         print("\n⚡ QUICK ALL-IN-ONE SCAN")
-        target = input("Target (URL or IP): ").strip()
+        target = input("Target (example.com or IP): ").strip()
         
         if not target:
             print("❌ No target provided!")
